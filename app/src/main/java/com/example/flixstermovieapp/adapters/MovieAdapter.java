@@ -22,6 +22,8 @@ import org.parceler.Parcels;
 
 import java.util.List;
 
+import jp.wasabeef.glide.transformations.RoundedCornersTransformation;
+
 public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> {
     Context context;
     List<Movie> movies;
@@ -60,6 +62,9 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> 
             tvTitle = itemView.findViewById(R.id.tvTitle);
             tvOverview = itemView.findViewById(R.id.tvOverview);
             ivPoster = itemView.findViewById(R.id.ivPoster);
+
+            int radius = 30; // corner radius, higher value = more rounded
+            int margin = 10; // crop margin, set to 0 for corners with no crop
             // add this as the itemView's OnClickListener
             itemView.setOnClickListener(this);
 
@@ -77,7 +82,14 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> 
             //if phone is in landscape
             //then imgUrl = backdrop page
             //else imgUrl = poster image
-            Glide.with(context).load(imgUrl).into(ivPoster);
+            int radius = 50; // corner radius, higher value = more rounded
+            int margin = 20; // crop margin, set to 0 for corners with no crop
+            Glide.with(context)
+                    .load(imgUrl)
+                    .transform(new RoundedCornersTransformation(radius, margin))
+                    .into(ivPoster);
+
+            //Glide.with(context).load(imgUrl).into(ivPoster);
 
         }
 
@@ -95,7 +107,6 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> 
                 intent.putExtra(Movie.class.getSimpleName(), Parcels.wrap(movie));
                 // show the activity
                 context.startActivity(intent);
-
             }
         }
     }

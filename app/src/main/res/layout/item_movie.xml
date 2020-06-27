@@ -3,7 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:background="#000000"
+    android:backgroundTint="#000000">
 
     <ImageView
         android:id="@+id/ivPoster"
@@ -13,6 +15,8 @@
         android:layout_alignParentTop="true"
         android:layout_marginStart="0dp"
         android:layout_marginTop="0dp"
+        android:adjustViewBounds="true"
+        android:cropToPadding="true"
         tools:srcCompat="@tools:sample/avatars" />
 
     <TextView
@@ -23,6 +27,8 @@
         android:layout_marginStart="9dp"
         android:layout_marginTop="7dp"
         android:layout_toEndOf="@+id/ivPoster"
+        android:fontFamily="@font/bangers"
+        android:textColor="#FFFFFF"
         android:textSize="24sp"
         tools:text=" Wasp Network" />
 
@@ -37,5 +43,7 @@
         android:layout_marginTop="5dp"
         android:layout_marginEnd="11dp"
         android:layout_toEndOf="@+id/ivPoster"
+        android:fontFamily="monospace"
+        android:textColor="#FFFFFF"
         tools:text="Havana, Cuba, 1990. René González, an airplane pilot, unexpectedly flees the country, leaving behind his wife Olga and his daughter Irma, and begins a new life in Miami, where he becomes a member of an anti-Castro organization." />
 </RelativeLayout>
