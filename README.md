@@ -30,14 +30,13 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://media.giphy.com/media/ZBQ27l6veFG67PZ1sn/giphy.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<iframe src="https://giphy.com/embed/ZBQ27l6veFG67PZ1sn" width="240" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/ZBQ27l6veFG67PZ1sn">via GIPHY</a></p>
 
 GIF created with [Giphy](http://www.giphy.com).
 
 ## Notes
 
 Describe any challenges encountered while building the app.
-
 ## Open-source libraries used
 
 - [Android Async HTTP](https://github.com/loopj/android-async-http) - Simple asynchronous HTTP requests with JSON parsing
