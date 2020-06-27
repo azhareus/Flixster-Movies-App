@@ -30,7 +30,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<iframe src="https://giphy.com/embed/ZBQ27l6veFG67PZ1sn" width="240" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/ZBQ27l6veFG67PZ1sn">via GIPHY</a></p>
+<img src='https://media3.giphy.com/media/ZBQ27l6veFG67PZ1sn/giphy.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [Giphy](http://www.giphy.com).
 
