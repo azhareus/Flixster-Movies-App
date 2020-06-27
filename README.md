@@ -30,6 +30,9 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 <div style="width:100%;height:0;padding-bottom:200%;position:relative;"><iframe src="https://giphy.com/embed/ZBQ27l6veFG67PZ1sn" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/ZBQ27l6veFG67PZ1sn">via GIPHY</a></p>
+![](http://i.imgur.com/OUkLi.gif)
+
+
 <img src="https://giphy.com/embed/ZBQ27l6veFG67PZ1sn" width="40" height="40" />
 
 <img src='https://media3.giphy.com/media/ZBQ27l6veFG67PZ1sn/giphy.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
