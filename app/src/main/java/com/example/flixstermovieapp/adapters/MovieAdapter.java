@@ -74,22 +74,34 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> 
             tvTitle.setText(movie.getTitle());
             tvOverview.setText(movie.getOverview());
             String imgUrl;
+            int radius = 50; // corner radius, higher value = more rounded
+            int margin = 50; // crop margin, set to 0 for corners with no crop
+
             if (context.getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE) {
                 imgUrl = movie.getBackdropPath();
+                //Glide.with(context).load(imgUrl).transform(new RoundedCornersTransformation(radius, margin)).into(ivPoster);
+                //Glide.with(context).load(imgUrl).override(1000, 1000).into(ivPoster);//works without rounded corners
+                Glide.with(context).load(imgUrl).transform(new RoundedCornersTransformation(radius, margin)).override(500, 500).into(ivPoster);
+
+
             } else {
+                //portrait
                 imgUrl = movie.getPosterPath();
+                //Glide.with(context).load(imgUrl).transform(new RoundedCornersTransformation(radius, margin)).override(100, 100).into(ivPoster);
+                //Glide.with(context).load(imgUrl).into(ivPoster);
+                Glide.with(context).load(imgUrl).transform(new RoundedCornersTransformation(radius, margin)).into(ivPoster);
+
             }
             //if phone is in landscape
             //then imgUrl = backdrop page
             //else imgUrl = poster image
-            int radius = 50; // corner radius, higher value = more rounded
-            int margin = 20; // crop margin, set to 0 for corners with no crop
-            Glide.with(context)
-                    .load(imgUrl)
-                    .transform(new RoundedCornersTransformation(radius, margin))
-                    .into(ivPoster);
-
+            //int radius = 0; // corner radius, higher value = more rounded
+            //int margin = 0; // crop margin, set to 0 for corners with no crop
+            //Glide.with(context).load(imgUrl).transform(new RoundedCornersTransformation(radius, margin)).override(100, 200).into(ivPoster);
+            //Glide.with(context).load(imgUrl).transform()
             //Glide.with(context).load(imgUrl).into(ivPoster);
+            //Glide.with(context).load(movie.getPosterPath() ).placeholder(R.drawable.ic_action_name).fitCenter().into(ivPoster);
+
 
         }
 
