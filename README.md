@@ -30,9 +30,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='https://github.com/azhareus/Flixster-Movies-App/blob/master/FlixsterDemoNew.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
-
-GIF created with [Giphy](http://www.giphy.com).
+<img src='https://github.com/azhareus/Flixster-Movies-App/blob/master/FlixsterFinalGIF.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 ## Notes
 
